@@ -21,7 +21,7 @@ function validatePhone(phone) {
     };
   }
 
-  if (digits.length === 10) {
+  if (digits.length !== 10) {
     return {
       valid: false,
       error: 'Phone number must be 10 digits'
